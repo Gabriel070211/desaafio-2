@@ -29,7 +29,7 @@ body{
     display: flex;
     position: absolute;
     right: 20px;
-    top:20px;
+    top:10px;
     gap:30px;
     align-items: center;
 }
@@ -99,4 +99,81 @@ h5{
     color: #696969;
     border:1px solid #696969;
     cursor: pointer;
+    
+}
+.header{
+    display: flex;
+    margin-top: 0;
+    padding: 0;
+    
+}
+
+#logoMenu{
+    color: #000;
+    margin-top: 5px;
+    padding: 0;
+}
+
+
+.headerMenu{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-top: 5px;
+
+}
+.headerMenu li{
+    list-style: none;
+    margin-right: 50px;
+    cursor: pointer;
+    
+}
+.menuOpen{
+    
+    text-align: justify;
+    display: flex;
+}
+.iconMenu{
+    padding-right: 10px;
+    width: 12px;
+}
+
+.iconArrow{
+    background-image: url(images/icon-arrow-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    height: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.iconArrow.open{
+    background-image: url(images/icon-arrow-up.svg);
+}
+.toggleButton{
+    
+    margin-top: 0;
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    visibility: hidden;
+
+    
+}
+.toggleButton li{
+    list-style: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.toggleButton.open{
+    visibility: visible;
+    margin-right: 20px;
+    background-color: rgb(245, 247, 246);
+    box-shadow: 2px 2px 2px #ababab;
+    border-radius: 10px;
 }
