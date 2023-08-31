@@ -23,14 +23,40 @@
   <div class="container">
     
     
-    <div id="menu">
-      <h2 id="main_title">snap</h2>
-      <h4 class="menu_item">Features</h4>
-      <h4 class="menu_item"> Company</h4>
-      <h4 class="menu_item"> Careers</h4>
-      <h4 class="menu_item">About </h4>
+    <div class="header">
+      <h2 id="logoMenu"> snap </h2>
+      <div id="listMenu">
+        <ul class="headerMenu">
+          <li class="itemMenu"> Features 
+            <button id="bt_features" onclick="openMenu('features')" class="iconArrow"></button>
+          </li>
+          
+          <li class="itemMenu">Company
+              <button id="bt_company" onclick="openMenu('company')" class="iconArrow"></button>
+          </li>
+          <li class="itemMenu">Carrers</li>
+          <li class="itemMenu">About</li>
+        </ul>
+  
+        <div class="menuOpen" >
+          <ul id="features" class="toggleButton">
+            <li><img class="iconMenu" src="images/icon-todo.svg"/> Todo list</li>
+            <li><img class="iconMenu" src="images/icon-calendar.svg"/> Calendar</li>
+            <li><img class="iconMenu" src="images/icon-reminders.svg"/> Reminders</li>
+            <li><img class="iconMenu" src="images/icon-planning.svg"/> Plannig</li>
+         </ul>
+
+         <ul id="company" class="toggleButton">
+          <li>History</li>
+          <li>Our time</li>
+          <li>Blog</li>
+          
+        </ul>
+        </div>
+      </div>
 
     </div>  
+    
     
     <div class="login_register">
       <p>Login</p>
@@ -59,5 +85,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Gabriel</a>.
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
